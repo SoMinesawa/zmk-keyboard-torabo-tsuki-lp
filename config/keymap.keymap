@@ -1,7 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -10,7 +10,7 @@
         bt_clear {
             bindings = <&bt BT_CLR>;
             key-positions = <28 29>;
-            layers = <3>;
+            layers = <5>;
         };
     };
 
@@ -32,7 +32,7 @@
 &kp TAB    &kp Q         &kp W         &kp E  &kp R     &kp T                                  &kp Y      &kp U  &kp I      &kp O    &kp P                 &kp BSPC
 &kp CAPS   &kp A         &kp S         &kp D  &kp F     &kp G        &none      &none          &kp H      &kp J  &kp K      &kp L    &kp SEMI              &kp SQT
 &kp LSHFT  &kp Z         &kp X         &kp C  &kp V     &kp B        &kp LANG2  &kp LANG1      &kp N      &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT FSLH  &mo 6
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mo 3  &kp BSPC  &lt 3 SPACE  &none      &kp BACKSPACE  &kp ENTER  &none  &none      &none    &kp RCTRL             &kp RCTRL
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mo 5  &kp BSPC  &lt 5 SPACE  &none      &kp BACKSPACE  &kp ENTER  &none  &none      &none    &kp RCTRL             &kp RCTRL
             >;
         };
 
@@ -42,7 +42,7 @@
 &kp TAB    &kp Q         &kp W         &kp E     &kp R     &kp T                                       &kp Y      &kp U  &kp I      &kp O    &kp P                 &kp BSPC
 &kp CAPS   &kp A         &kp S         &kp D     &kp F     &kp G        &none           &none          &kp H      &kp J  &kp K      &kp L    &kp SEMI              &kp SQT
 &kp LSHFT  &kp Z         &kp X         &kp C     &kp V     &kp B        &kp LANGUAGE_2  &kp LANG1      &kp N      &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT FSLH  &kp RSHFT
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LALT  &kp BSPC  &lt 3 SPACE  &none           &kp BACKSPACE  &kp ENTER  &none  &none      &none    &kp RCTRL             &kp RCTRL
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LALT  &kp BSPC  &lt 5 SPACE  &none           &kp BACKSPACE  &kp ENTER  &none  &none      &none    &kp RCTRL             &kp RCTRL
             >;
         };
 
@@ -52,21 +52,11 @@
 &kp TAB    &kp Q         &kp W         &kp E     &kp R     &kp T                                       &kp Y      &kp U  &kp I      &kp O    &kp P                 &kp BSPC
 &kp CAPS   &kp A         &kp S         &kp D     &kp F     &kp G        &none           &none          &kp H      &kp J  &kp K      &kp L    &kp SEMI              &kp SQT
 &kp LSHFT  &kp Z         &kp X         &kp C     &kp V     &kp B        &kp LANGUAGE_2  &kp LANG1      &kp N      &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT FSLH  &kp RSHFT
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LALT  &kp BSPC  &lt 3 SPACE  &none           &kp BACKSPACE  &kp ENTER  &none  &none      &none    &kp RCTRL             &kp RCTRL
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LALT  &kp BSPC  &lt 5 SPACE  &none           &kp BACKSPACE  &kp ENTER  &none  &none      &none    &kp RCTRL             &kp RCTRL
             >;
         };
 
-        Windows-sub {
-            bindings = <
-&trans  &trans   &trans   &trans        &trans        &trans                      &trans            &trans     &trans         &trans     &trans      &trans
-&trans  &kp F1   &kp F2   &kp F3        &kp F4        &kp F5                      &kp HOME          &kp PG_UP  &kp PAGE_DOWN  &kp END    &kp ESCAPE  &trans
-&trans  &kp F6   &kp F7   &kp F8        &kp F9        &kp F10     &trans  &trans  &kp LEFT          &kp DOWN   &kp UP_ARROW   &kp RIGHT  &kp TAB     &trans
-&trans  &kp F11  &kp F12  &out OUT_USB  &out OUT_BLE  &bt BT_NXT  &trans  &trans  &kp SINGLE_QUOTE  &kp DQT    &kp GRAVE      &kp TILDE  &kp PIPE    &trans
-&trans  &trans   &trans   &trans        &kp DELETE    &kp TAB     &trans  &trans  &trans            &trans     &trans         &trans     &trans      &trans
-            >;
-        };
-
-        Gaming-Sub {
+        Windows-Sub {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
@@ -78,21 +68,31 @@
 
         Mac-sub {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&none             &none         &none                      &none         &none         &none                                &none      &none           &none           &none      &none   &none
+&trans            &none         &kp NUMBER_7               &kp NUMBER_8  &kp NUMBER_9  &kp MINUS                            &none      &none           &kp UP_ARROW    &none      &none   &trans
+&kp TAB           &none         &kp NUMBER_4               &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &trans     &trans         &none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none   &trans
+&kp LSHIFT        &none         &kp NUMBER_1               &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL  &trans     &trans         &none      &none           &none           &none      &none   &trans
+&kp LEFT_CONTROL  &kp LEFT_ALT  &mt LEFT_COMMAND NUMBER_0  &kp PERIOD    &mkp LCLK     &kp SPACE  &mkp RCLK  &kp BACKSPACE  &kp ENTER  &none           &none           &none      &trans  &trans
+            >;
+        };
+
+        Num {
+            bindings = <
+&trans  &trans        &trans        &trans        &trans        &trans                  &trans        &trans  &trans  &trans  &trans   &trans
+&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                  &kp F6        &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &trans  &trans  &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0   &kp F12
+&trans  &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans   &kp F13
+&trans  &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans   &kp F14
             >;
         };
 
         Other {
             bindings = <
-&none       &none   &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&sys_reset  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&none         &none           &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&sys_reset    &bt BT_CLR_ALL  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 0  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 1  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 2  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };

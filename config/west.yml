@@ -4,8 +4,6 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: sekigon-gonnoc
       url-base: https://github.com/sekigon-gonnoc
-    - name: sominesawa
-      url-base: https://github.com/SoMinesawa
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -19,8 +17,8 @@ manifest:
       remote: sekigon-gonnoc
       revision: main
     - name: zmk-driver-paw3222
-      remote: sominesawa
-      revision: torabo-tsuki-power-cycle
+      remote: sekigon-gonnoc
+      revision: torabo-tsuki
     - name: zmk-driver-iqs7211e
       remote: sekigon-gonnoc
     - name: zmk-feature-cdc-acm-bootloader-trigger

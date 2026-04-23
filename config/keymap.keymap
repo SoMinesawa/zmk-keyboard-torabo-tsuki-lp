@@ -28,31 +28,31 @@
 
         Windows-main {
             bindings = <
-&none      &none         &none         &none  &none     &none                                  &none      &none  &none      &none    &none                 &none
-&kp TAB    &kp Q         &kp W         &kp E  &kp R     &kp T                                  &kp Y      &kp U  &kp I      &kp O    &kp P                 &kp BSPC
-&kp CAPS   &kp A         &kp S         &kp D  &kp F     &kp G        &none      &none          &kp H      &kp J  &kp K      &kp L    &kp SEMI              &kp SQT
-&kp LSHFT  &kp Z         &kp X         &kp C  &kp V     &kp B        &kp LANG2  &kp LANG1      &kp N      &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT FSLH  &mo 6
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mo 5  &kp BSPC  &lt 5 SPACE  &none      &kp BACKSPACE  &kp ENTER  &none  &none      &none    &kp RCTRL             &kp RCTRL
+&none         &none   &none   &none   &none   &none                             &none   &none   &none   &none   &none   &none
+&trans        &trans  &trans  &trans  &trans  &trans                            &trans  &trans  &trans  &trans  &trans  &trans
+&kp CAPSLOCK  &trans  &trans  &trans  &trans  &trans  &none        &none        &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans  &trans  &trans  &lt 3 LANG1  &lt 3 LANG4  &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans  &trans  &trans  &trans       &trans       &trans  &none   &none   &none   &to 2   &trans
             >;
         };
 
         Gaming-main {
             bindings = <
-&none      &none         &none         &none     &none     &none                                       &none      &none  &none      &none    &none                 &none
-&kp TAB    &kp Q         &kp W         &kp E     &kp R     &kp T                                       &kp Y      &kp U  &kp I      &kp O    &kp P                 &kp BSPC
-&kp CAPS   &kp A         &kp S         &kp D     &kp F     &kp G        &none           &none          &kp H      &kp J  &kp K      &kp L    &kp SEMI              &kp SQT
-&kp LSHFT  &kp Z         &kp X         &kp C     &kp V     &kp B        &kp LANGUAGE_2  &kp LANG1      &kp N      &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT FSLH  &kp RSHFT
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LALT  &kp BSPC  &lt 5 SPACE  &none           &kp BACKSPACE  &kp ENTER  &none  &none      &none    &kp RCTRL             &kp RCTRL
+&none              &none         &none     &none   &none          &none                             &none   &none   &none   &none   &none   &none
+&trans             &trans        &trans    &trans  &trans         &trans                            &trans  &trans  &trans  &trans  &trans  &trans
+&kp RIGHT_BRACKET  &trans        &trans    &trans  &trans         &trans  &none             &none   &trans  &trans  &trans  &trans  &trans  &trans
+&trans             &trans        &trans    &trans  &trans         &trans  &kp LEFT_BRACKET  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_CONTROL   &kp LEFT_GUI  &kp LALT  &trans  &kp SEMICOLON  &trans  &kp COMMA         &trans  &trans  &none   &none   &none   &trans  &trans
             >;
         };
 
         Mac-main {
             bindings = <
-&none      &none         &none         &none     &none     &none                                       &none      &none  &none      &none    &none                 &none
-&kp TAB    &kp Q         &kp W         &kp E     &kp R     &kp T                                       &kp Y      &kp U  &kp I      &kp O    &kp P                 &kp BSPC
-&kp CAPS   &kp A         &kp S         &kp D     &kp F     &kp G        &none           &none          &kp H      &kp J  &kp K      &kp L    &kp SEMI              &kp SQT
-&kp LSHFT  &kp Z         &kp X         &kp C     &kp V     &kp B        &kp LANGUAGE_2  &kp LANG1      &kp N      &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT FSLH  &kp RSHFT
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LALT  &kp BSPC  &lt 5 SPACE  &none           &kp BACKSPACE  &kp ENTER  &none  &none      &none    &kp RCTRL             &kp RCTRL
+&none      &none         &none         &none  &none     &none                                         &none      &none  &none      &none    &none     &none
+&kp TAB    &kp Q         &kp W         &kp E  &kp R     &kp T                                         &kp Y      &kp U  &kp I      &kp O    &kp P     &kp MINUS
+&kp CAPS   &kp A         &kp S         &kp D  &kp F     &kp G        &none           &none            &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z         &kp X         &kp C  &kp V     &kp B        &lt 4 LEFT_GUI  &lt 4 RIGHT_GUI  &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mo 6
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mo 4  &kp BSPC  &lt 5 SPACE  &none           &kp BACKSPACE    &kp ENTER  &none  &none      &none    &to 0     &mo 4
             >;
         };
 
@@ -68,11 +68,11 @@
 
         Mac-sub {
             bindings = <
-&none             &none         &none                      &none         &none         &none                                &none      &none           &none           &none      &none   &none
-&trans            &none         &kp NUMBER_7               &kp NUMBER_8  &kp NUMBER_9  &kp MINUS                            &none      &none           &kp UP_ARROW    &none      &none   &trans
-&kp TAB           &none         &kp NUMBER_4               &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &trans     &trans         &none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none   &trans
-&kp LSHIFT        &none         &kp NUMBER_1               &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL  &trans     &trans         &none      &none           &none           &none      &none   &trans
-&kp LEFT_CONTROL  &kp LEFT_ALT  &mt LEFT_COMMAND NUMBER_0  &kp PERIOD    &mkp LCLK     &kp SPACE  &mkp RCLK  &kp BACKSPACE  &kp ENTER  &none           &none           &none      &trans  &trans
+&none             &none         &none                      &none         &none         &none                                &none      &none           &none           &none      &none      &none
+&trans            &none         &kp NUMBER_7               &kp NUMBER_8  &kp NUMBER_9  &kp MINUS                            &none      &none           &kp UP_ARROW    &none      &kp EQUAL  &trans
+&kp TAB           &none         &kp NUMBER_4               &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &trans     &trans         &none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none      &trans
+&kp LSHIFT        &none         &kp NUMBER_1               &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL  &trans     &trans         &none      &none           &none           &none      &none      &trans
+&kp LEFT_CONTROL  &kp LEFT_ALT  &mt LEFT_COMMAND NUMBER_0  &kp PERIOD    &mkp LCLK     &kp SPACE  &mkp RCLK  &kp BACKSPACE  &kp ENTER  &none           &none           &none      &trans     &trans
             >;
         };
 
@@ -93,6 +93,16 @@
 &bt BT_SEL 0  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &bt BT_SEL 1  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &bt BT_SEL 2  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        Baseline {
+            bindings = <
+&none   &none   &none   &none   &none   &none                   &none   &none   &none   &none   &none   &none
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none   &none   &none   &trans  &trans
             >;
         };
     };

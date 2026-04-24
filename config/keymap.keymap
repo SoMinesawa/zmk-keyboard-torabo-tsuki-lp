@@ -22,21 +22,21 @@
             label = "PASSWORD";
         };
 
-        paren: bra {
+        paren: paren-macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>;
             label = "BRA";
         };
 
-        bra: bra {
+        bra: bracket-macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET>;
             label = "BRA";
         };
 
-        brace: bra {
+        brace: brace-macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE>;

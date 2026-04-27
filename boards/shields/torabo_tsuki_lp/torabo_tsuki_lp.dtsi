@@ -141,6 +141,7 @@
 // trackball and trackpad are defined in the snippets
 
 &physical_layout_s {
+    status = "disabled";
     compatible = "zmk,physical-layout";
     display-name = "S Layout";
     kscan = <&kscan0>;
@@ -155,6 +156,7 @@
 };
 
 &physical_layout_l {
+    status = "disabled";
     compatible = "zmk,physical-layout";
     display-name = "L Layout";
     kscan = <&kscan0>;

@@ -223,6 +223,7 @@
     // };
 
     position_map_1 {
+        status = "disabled";
         compatible = "zmk,physical-layout-position-map";
         complete;
         position_map_s_1 {

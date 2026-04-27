@@ -20,28 +20,24 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N7 &kp N7 &kp N0 &kp N0 &kp N1 &kp N0 &kp N6 &kp N0 &kp N1 &kp N6 &kp G &kp LS(B)>;
-            label = "PASSWORD";
         };
 
         paren: paren-macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>;
-            label = "BRA";
         };
 
         bra: bracket-macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET>;
-            label = "BRA";
         };
 
         brace: brace-macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE>;
-            label = "BRA";
         };
     };
 

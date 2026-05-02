@@ -64,10 +64,10 @@
 
         Mac-main {
             bindings = <
-&trans     &trans        &trans           &trans  &trans  &trans                                   &trans  &trans  &trans  &trans  &trans  &trans
-&none      &trans        &trans           &trans  &trans  &trans                                   &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans        &trans           &trans  &trans  &trans  &lt 3 LEFT_GUI  &lt 3 RIGHT_GUI  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL  &kp LEFT_ALT  &mt LEFT_GUI N0  &trans  &trans  &trans  &trans          &trans           &trans  &none   &none   &none   &to 0   &trans
+&trans     &trans        &trans           &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans
+&none      &trans        &trans           &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans        &trans           &trans  &trans  &trans  &lt 3 LANGUAGE_2  &lt 3 LANGUAGE_1  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL  &kp LEFT_ALT  &mt LEFT_GUI N0  &trans  &trans  &trans  &trans            &trans            &trans  &none   &none   &none   &to 0   &trans
             >;
         };
 

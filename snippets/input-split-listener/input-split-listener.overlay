@@ -30,7 +30,7 @@
             layers = <2>;
             process-next;
             input-processors =
-                <&zip_scroll_scaler 1 4>;
+                <&zip_scroll_scaler 1 16>;
         };
 
         fast_layer {

@@ -20,7 +20,7 @@ manifest:
       revision: main
     - name: zmk-driver-paw3222
       remote: sominesawa
-      revision: safe-read-xy
+      revision: fix/re-enable-irq-on-read-error
     - name: zmk-driver-iqs7211e
       remote: sekigon-gonnoc
     - name: zmk-feature-cdc-acm-bootloader-trigger

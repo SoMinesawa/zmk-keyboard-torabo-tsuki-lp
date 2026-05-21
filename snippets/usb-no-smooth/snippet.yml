@@ -1,0 +1,3 @@
+name: usb-no-smooth
+append:
+  EXTRA_CONF_FILE: usb-no-smooth.conf

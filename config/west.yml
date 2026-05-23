@@ -20,7 +20,7 @@ manifest:
       revision: main
     - name: zmk-driver-paw3222
       remote: sominesawa
-      revision: diag/paw3222-force-polling
+      revision: diag/paw3222-logging
     - name: zmk-driver-iqs7211e
       remote: sekigon-gonnoc
     - name: zmk-feature-cdc-acm-bootloader-trigger

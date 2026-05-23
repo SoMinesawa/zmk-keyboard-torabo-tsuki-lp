@@ -1,0 +1,4 @@
+name: diag-usb-logging
+append:
+  EXTRA_CONF_FILE: diag-usb-logging.conf
+  EXTRA_DTC_OVERLAY_FILE: diag-usb-logging.overlay

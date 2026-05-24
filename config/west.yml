@@ -20,7 +20,7 @@ manifest:
       revision: main
     - name: zmk-driver-paw3222
       remote: sominesawa
-      revision: diag/paw3222-delayed-reinit
+      revision: diag/paw3222-hard-power-cycle
     - name: zmk-driver-iqs7211e
       remote: sekigon-gonnoc
     - name: zmk-feature-cdc-acm-bootloader-trigger

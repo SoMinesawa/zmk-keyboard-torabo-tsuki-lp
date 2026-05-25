@@ -1,0 +1,4 @@
+config TORABO_TSUKI_LP_ISSUE3_DIAG
+    bool "Enable Torabo Tsuki LP issue #3 diagnostics"
+    help
+      Enable extra USB and raw pointing-device logs for diagnosing issue #3.

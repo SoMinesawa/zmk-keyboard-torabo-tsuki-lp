@@ -1,0 +1,3 @@
+name: issue3-diagnostics
+append:
+  EXTRA_CONF_FILE: issue3-diagnostics.conf

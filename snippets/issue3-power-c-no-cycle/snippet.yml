@@ -1,0 +1,4 @@
+name: issue3-power-c-no-cycle
+append:
+  EXTRA_CONF_FILE: issue3-power-c-no-cycle.conf
+  EXTRA_DTC_OVERLAY_FILE: issue3-power-c-no-cycle.overlay

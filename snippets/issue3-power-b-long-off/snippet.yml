@@ -1,0 +1,4 @@
+name: issue3-power-b-long-off
+append:
+  EXTRA_CONF_FILE: issue3-power-b-long-off.conf
+  EXTRA_DTC_OVERLAY_FILE: issue3-power-b-long-off.overlay

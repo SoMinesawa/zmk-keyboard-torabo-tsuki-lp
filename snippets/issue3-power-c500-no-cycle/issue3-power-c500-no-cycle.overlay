@@ -1,0 +1,3 @@
+&pointing_device {
+    force-awake;
+};

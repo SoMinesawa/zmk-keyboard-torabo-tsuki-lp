@@ -20,7 +20,7 @@ manifest:
       revision: main
     - name: zmk-driver-paw3222
       remote: sominesawa
-      revision: fix/paw3222-disable-runtime-pm
+      revision: fix/paw3222-skip-init-power-cycle
     - name: zmk-driver-iqs7211e
       remote: sekigon-gonnoc
     - name: zmk-feature-cdc-acm-bootloader-trigger

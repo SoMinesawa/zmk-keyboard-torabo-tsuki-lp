@@ -15,6 +15,6 @@
         irq-gpios = <&gpio0 19 GPIO_ACTIVE_LOW>;
         power-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | NRF_GPIO_DRIVE_H0H1)>;
         skip-init-power-cycle;
-        force-awake;
+        poll-interval-ms = <15>;
     };
 };

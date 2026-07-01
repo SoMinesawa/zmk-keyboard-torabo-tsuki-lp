@@ -9,7 +9,7 @@
 * _centralがついているuf2をトラックボールがついている方に、_peripheralを反対側に書き込んでください
 * キーマップはkeymap-editorおよびzmk-studioで編集できます
 
-現在の主なビルド対象は以下です。自分はトラックボールを右手側につけて使用しています。
+現在の主なビルド対象は以下です。自分はトラックボールを右手側につけて使用しています。なお、これらのビルドはcommitをするとgithub actionで自動的にビルドされます。
 
 * `torabo_tsuki_lp_right_central`
 * `torabo_tsuki_lp_left_peripheral`

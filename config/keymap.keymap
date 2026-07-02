@@ -74,8 +74,8 @@
         Sub {
             bindings = <
 &kp ESCAPE  &kp HOME       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS                  &kp SLASH     &kp EQUAL       &kp UP_ARROW    &kp BACKSLASH  &kp DELETE  &trans
-&trans      &kp END        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS                   &kp ASTERISK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &none       &trans
-&trans      &kp PAGE_UP    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL  &trans  &trans  &password     &paren          &bra            &brace         &none       &trans
+&trans      &kp END        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS                   &kp ASTERISK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &mkp LCLK   &trans
+&trans      &kp PAGE_UP    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL  &trans  &trans  &password     &paren          &bra            &brace         &mkp RCLK   &trans
 &trans      &kp PAGE_DOWN  &trans        &kp PERIOD    &trans        &trans     &trans  &trans  &trans        &none           &none           &none          &trans      &trans
             >;
         };
